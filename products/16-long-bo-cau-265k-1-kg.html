@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lồng bồ câu - Thiết bị Trúc Giang</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="../images/truc-giang.jpg" alt="Trúc Giang Logo">
+                    <span>Thiết bị Trúc Giang</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="../index.html">Trang chủ</a></li>
+                    <li><a href="../about.html">Giới thiệu</a></li>
+                    <li><a href="../products.html">Sản phẩm</a></li>
+                    <li><a href="../contact.html">Liên hệ</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="product-container">
+            <div class="product-images">
+                <div class="main-image">
+                    <img id="mainImage" src="../16-long-bo-cau-265k-1-kg/16-long-bo-cau-265k-1-kg-1.jpg" alt="Lồng bồ câu">
+                </div>
+                <div class="image-gallery">
+                    <img src="../16-long-bo-cau-265k-1-kg/16-long-bo-cau-265k-1-kg-1.jpg" alt="Lồng bồ câu 1" onclick="changeMainImage(this.src)">
+                    <img src="../16-long-bo-cau-265k-1-kg/16-long-bo-cau-265k-1-kg-2.jpg" alt="Lồng bồ câu 2" onclick="changeMainImage(this.src)">
+                    <img src="../16-long-bo-cau-265k-1-kg/16-long-bo-cau-265k-1-kg-3.jpg" alt="Lồng bồ câu 3" onclick="changeMainImage(this.src)">
+                    <img src="../16-long-bo-cau-265k-1-kg/16-long-bo-cau-265k-1-kg-4.jpg" alt="Lồng bồ câu 4" onclick="changeMainImage(this.src)">
+                    <img src="../16-long-bo-cau-265k-1-kg/16-long-bo-cau-265k-1-kg-5.jpg" alt="Lồng bồ câu 5" onclick="changeMainImage(this.src)">
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h1>Lồng bồ câu</h1>
+                <div class="price">Giá: 26.500đ/kg</div>
+                
+                <div class="product-description">
+                    <h2>Mô tả sản phẩm</h2>
+                    <p>Lồng bồ câu được thiết kế chuyên dụng cho việc nuôi và chăm sóc bồ câu. Sản phẩm được sản xuất từ thép mạ kẽm chất lượng cao, có cấu trúc chắc chắn, thoáng khí và đảm bảo an toàn cho bồ câu.</p>
+                </div>
+
+                <div class="specifications">
+                    <h2>Thông số kỹ thuật</h2>
+                    <ul>
+                        <li><strong>Chất liệu:</strong> Thép mạ kẽm cao cấp</li>
+                        <li><strong>Kích thước:</strong> Đa dạng theo yêu cầu</li>
+                        <li><strong>Số ô:</strong> 6 ô, 12 ô, 16 ô</li>
+                        <li><strong>Khoảng cách nan:</strong> 1.5cm - 2cm</li>
+                        <li><strong>Độ dày dây:</strong> 2.5mm - 3mm</li>
+                        <li><strong>Màu sắc:</strong> Xám bạc</li>
+                    </ul>
+                </div>
+
+                <div class="features">
+                    <h2>Đặc điểm nổi bật</h2>
+                    <ul>
+                        <li>Thiết kế chuyên dụng cho bồ câu</li>
+                        <li>Cấu trúc chắc chắn, an toàn</li>
+                        <li>Thoáng khí, thông gió tốt</li>
+                        <li>Dễ dàng vệ sinh và bảo trì</li>
+                        <li>Chống gỉ sét, độ bền cao</li>
+                        <li>Lắp đặt đơn giản</li>
+                        <li>Giá thành hợp lý</li>
+                    </ul>
+                </div>
+
+                <div class="contact-section">
+                    <h2>Liên hệ đặt hàng</h2>
+                    <p>Để biết thêm thông tin chi tiết và đặt hàng, vui lòng liên hệ:</p>
+                    <a href="https://zalo.me/0382198383" class="zalo-button" target="_blank">
+                        
+                        Liên hệ qua Zalo: 0382198383
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Thiết bị Trúc Giang</h3>
+                <p>Chuyên cung cấp thiết bị chăn nuôi chất lượng cao</p>
+            </div>
+            <div class="footer-section">
+                <h3>Liên hệ</h3>
+                <p>Email: info@trucgiang.love</p>
+                <p>Website: trucgiang.love</p>
+                <p>Hotline/Zalo: 0382198383</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Thiết bị Trúc Giang. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function changeMainImage(src) {
+            document.getElementById('mainImage').src = src;
+        }
+    </script>
+</body>
+</html> 

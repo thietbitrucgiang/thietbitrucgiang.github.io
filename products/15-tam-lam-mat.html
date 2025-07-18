@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tấm làm mát - Thiết bị Trúc Giang</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="../images/truc-giang.jpg" alt="Trúc Giang Logo">
+                    <span>Thiết bị Trúc Giang</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="../index.html">Trang chủ</a></li>
+                    <li><a href="../about.html">Giới thiệu</a></li>
+                    <li><a href="../products.html">Sản phẩm</a></li>
+                    <li><a href="../contact.html">Liên hệ</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="product-container">
+            <div class="product-images">
+                <div class="main-image">
+                    <img id="mainImage" src="../15-tam-lam-mat/15-tam-lam-mat-1.jpg" alt="Tấm làm mát">
+                </div>
+                <div class="image-gallery">
+                    <img src="../15-tam-lam-mat/15-tam-lam-mat-1.jpg" alt="Tấm làm mát 1" onclick="changeMainImage(this.src)">
+                    <img src="../15-tam-lam-mat/15-tam-lam-mat-2.jpg" alt="Tấm làm mát 2" onclick="changeMainImage(this.src)">
+                    <img src="../15-tam-lam-mat/15-tam-lam-mat-3.jpg" alt="Tấm làm mát 3" onclick="changeMainImage(this.src)">
+                    <img src="../15-tam-lam-mat/15-tam-lam-mat-4.jpg" alt="Tấm làm mát 4" onclick="changeMainImage(this.src)">
+                    <img src="../15-tam-lam-mat/15-tam-lam-mat-5.jpg" alt="Tấm làm mát 5" onclick="changeMainImage(this.src)">
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h1>Tấm làm mát</h1>
+                <div class="price">Giá: 1.700.000đ/mét dài</div>
+                
+                <div class="product-description">
+                    <h2>Mô tả sản phẩm</h2>
+                    <p>Tấm làm mát (cooling pad) là hệ thống làm mát bằng bay hơi nước, giúp giảm nhiệt độ và tăng độ ẩm trong chuồng trại, tạo môi trường thoải mái cho vật nuôi.</p>
+                </div>
+
+                <div class="product-specs">
+                    <h2>Thông số kỹ thuật</h2>
+                    <ul>
+                        <li><strong>Giá khung dàn mát:</strong> 1.700.000đ/mét dài</li>
+                        <li><strong>Chất liệu:</strong> Giấy Thái Lan, nhựa PP</li>
+                        <li><strong>Độ dày:</strong> 100mm - 200mm</li>
+                        <li><strong>Hiệu quả làm mát:</strong> 5-12°C</li>
+                        <li><strong>Lưu lượng nước:</strong> 2-5 lít/m²/phút</li>
+                        <li><strong>Tuổi thọ:</strong> 3-5 năm</li>
+                    </ul>
+                </div>
+
+                <div class="product-features">
+                    <h2>Đặc điểm nổi bật</h2>
+                    <ul>
+                        <li>✓ Làm mát hiệu quả 5-12°C</li>
+                        <li>✓ Tiết kiệm điện năng</li>
+                        <li>✓ Tăng độ ẩm không khí</li>
+                        <li>✓ Thân thiện với môi trường</li>
+                        <li>✓ Dễ dàng lắp đặt và thay thế</li>
+                        <li>✓ Phù hợp mọi quy mô trang trại</li>
+                    </ul>
+                </div>
+
+                <div class="contact-info">
+                    <h2>Liên hệ tư vấn</h2>
+                    <p><strong>Hotline/Zalo:</strong> <a href="https://zalo.me/0382198383" target="_blank">0382198383</a></p>
+                    <p><strong>Email:</strong> trucgiang.love@gmail.com</p>
+                    <a href="https://zalo.me/0382198383" class="zalo-button" target="_blank">Nhắn tin Zalo</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Thiết bị Trúc Giang</h3>
+                <p>Chuyên cung cấp thiết bị chăn nuôi lợn chất lượng cao</p>
+            </div>
+            <div class="footer-section">
+                <h3>Liên hệ</h3>
+                <p>Hotline/Zalo: 0382198383</p>
+                <p>Email: trucgiang.love@gmail.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Thiết bị Trúc Giang. Tất cả quyền được bảo lưu.</p>
+        </div>
+    </footer>
+
+    <script>
+        function changeMainImage(src) {
+            document.getElementById('mainImage').src = src;
+        }
+    </script>
+</body>
+</html> 

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Danh mục sản phẩm - Thiết Bị Trúc Giang</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .product-list { 
+      display: grid; 
+      grid-template-columns: 1fr 1fr; 
+      gap: 24px; 
+      max-width: 1000px; 
+      margin: 0 auto; 
+      padding: 0 20px; 
+    }
+    .product-item { 
+      background: #fff; 
+      border-radius: 10px; 
+      box-shadow: 0 2px 8px #0001; 
+      padding: 16px; 
+      text-align: center; 
+    }
+    .product-item img { 
+      width: 100%; 
+      max-width: 200px; 
+      height: 140px; 
+      object-fit: cover; 
+      border-radius: 8px; 
+      margin-bottom: 10px; 
+    }
+    .product-item h3 { 
+      margin: 8px 0 6px 0; 
+      font-size: 1.1em; 
+      color: #388e3c; 
+    }
+    .product-item .price { 
+      color: #388e3c; 
+      font-weight: bold; 
+      margin-bottom: 6px; 
+    }
+    .product-item .short-desc { 
+      font-size: 0.98em; 
+      min-height: 38px; 
+      color: #444; 
+      margin-bottom: 10px; 
+    }
+    .product-item a { 
+      display: inline-block; 
+      background: #7ed957; 
+      color: #fff; 
+      padding: 7px 18px; 
+      border-radius: 18px; 
+      text-decoration: none; 
+      font-weight: 500; 
+      transition: background 0.2s; 
+    }
+    .product-item a:hover { 
+      background: #388e3c; 
+    }
+    
+    /* Responsive design */
+    @media (max-width: 768px) {
+      .product-list {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        padding: 0 10px;
+      }
+      .product-item img {
+        max-width: 180px;
+        height: 120px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="images/truc-giang.jpg" alt="Ảnh đại diện Trúc Giang" class="avatar">
+    <h1>Thiết Bị Trúc Giang</h1>
+    <p class="slogan">Giải pháp thiết bị chăn nuôi hiện đại, bền bỉ, tối ưu!</p>
+    <nav>
+      <ul>
+        <li><a href="index.html">Trang chủ</a></li>
+        <li><a href="about.html">Giới thiệu</a></li>
+        <li><a href="products.html">Sản phẩm</a></li>
+        <li><a href="contact.html">Liên hệ</a></li>
+      </ul>
+    </nav>
+    <a href="https://zalo.me/0382198383" class="zalo-btn" target="_blank">Liên hệ Zalo: 0382198383</a>
+  </header>
+  <main>
+    <h2 style="text-align:center;">Danh mục sản phẩm</h2>
+    <div class="product-list">
+      <div class="product-item">
+        <img src="1-hinh-anh-lon-kem-cui/1-hinh-anh-lon-kem-cui-1.jpg" alt="Hình ảnh lợn kèm cũi">
+        <h3>Hình ảnh lợn kèm cũi</h3>
+        <div class="price">Liên hệ</div>
+        <div class="short-desc">Bộ sưu tập hình ảnh thực tế về lợn và cũi chăn nuôi, minh họa chất lượng sản phẩm.</div>
+        <a href="products/1-hinh-anh-lon-kem-cui.html">Xem chi tiết</a>
+      </div>
+      
+      <div class="product-item">
+        <img src="2-1-cui-lon-nai-5500k/2-1-cui-lon-nai-5500k-1.jpg" alt="Cũi lợn nái">
+        <h3>Cũi lợn nái</h3>
+        <div class="price">5.500.000đ</div>
+        <div class="short-desc">Cũi chuyên dụng cho lợn nái sinh sản, thiết kế an toàn, chắc chắn, dễ vệ sinh.</div>
+        <a href="products/2-1-cui-lon-nai-5500k.html">Xem chi tiết</a>
+      </div>
+      
+      <div class="product-item">
+        <img src="2-2-cui-ket-hop-san-cai-sua-5700k/2-2-cui-ket-hop-san-cai-sua-5700k-1.jpg" alt="Cũi kết hợp sàn cai sữa">
+        <h3>Cũi kết hợp sàn cai sữa</h3>
+        <div class="price">5.700.000đ</div>
+        <div class="short-desc">Giải pháp tích hợp cũi và sàn cai sữa, tối ưu cho việc quản lý lợn con.</div>
+        <a href="products/2-2-cui-ket-hop-san-cai-sua-5700k.html">Xem chi tiết</a>
+      </div>
+      
+      <div class="product-item">
+        <img src="2-3-khung-sat-gia-24k-1-kg/2-3-khung-sat-gia-24k-1-kg-1.jpg" alt="Khung sắt">
+        <h3>Khung sắt</h3>
+        <div class="price">24.000đ/kg</div>
+        <div class="short-desc">Thành phần cơ bản cho xây dựng chuồng trại, chất lượng cao, độ bền tốt.</div>
+        <a href="products/2-3-khung-sat-gia-24k-1-kg.html">Xem chi tiết</a>
+      </div>
+      
+      <div class="product-item">
+        <img src="3-he-thong-khu-mui/3-he-thong-khu-mui-1.jpg" alt="Hệ thống khử mùi">
+        <h3>Hệ thống khử mùi</h3>
+        <div class="price">Liên hệ Zalo</div>
+        <div class="short-desc">Giải pháp phun sương tự động, kiểm soát mùi hôi hiệu quả cho chuồng trại.</div>
+        <a href="products/3-he-thong-khu-mui.html">Xem chi tiết</a>
+      </div>
+      
+      <div class="product-item">
+        <img src="4-he-thong-bat-hdpe/4-he-thong-bat-hdpe-1.jpg" alt="Hệ thống bạt HDPE">
+        <h3>Hệ thống bạt HDPE</h3>
+        <div class="price">Liên hệ Zalo</div>
+        <div class="short-desc">Bạt HDPE chống thấm, chống UV, bảo vệ chuồng trại khỏi thời tiết.</div>
+        <a href="products/4-he-thong-bat-hdpe.html">Xem chi tiết</a>
+      </div>
+      
+      <div class="product-item">
+        <img src="5-quat-cong-nghiep/5-quat-cong-nghiep-1.jpg" alt="Quạt công nghiệp">
+        <h3>Quạt công nghiệp</h3>
+        <div class="price">Liên hệ Zalo</div>
+        <div class="short-desc">Quạt thông gió công nghiệp, làm mát chuồng trại, hiệu suất cao.</div>
+        <a href="products/5-quat-cong-nghiep.html">Xem chi tiết</a>
+      </div>
+      
+      <div class="product-item">
+        <img src="6-long-ga-27k-1kg/6-long-ga-27k-1kg-1.jpg" alt="Lồng gà">
+        <h3>Lồng gà</h3>
+        <div class="price">27.000đ/kg</div>
+        <div class="short-desc">Lồng nuôi gà chất lượng cao, thiết kế tối ưu, dễ vệ sinh và bảo trì.</div>
+        <a href="products/6-long-ga-27k-1kg.html">Xem chi tiết</a>
+      </div>
+      
+      <div class="product-item">
+        <img src="7-chuong-bau-hau-bi-228k-1-kg/7-chuong-bau-hau-bi-228k-1-kg-1.jpg" alt="Chuồng bầu (hậu bị)">
+        <h3>Chuồng bầu (hậu bị)</h3>
+        <div class="price">22.800đ/kg</div>
+        <div class="short-desc">Chuồng nuôi lợn hậu bị, kiểm soát vận động, thiết kế khoa học.</div>
+        <a href="products/7-chuong-bau-hau-bi-228k-1-kg.html">Xem chi tiết</a>
+      </div>
+      
+      <div class="product-item">
+        <img src="8-san-nhua-cho-lon-130-140k/8-san-nhua-cho-lon-130-140k-1.jpg" alt="Sàn nhựa cho lợn">
+        <h3>Sàn nhựa cho lợn</h3>
+        <div class="price">130.000đ - 140.000đ</div>
+        <div class="short-desc">Sàn nhựa composite chống trượt, an toàn cho lợn, dễ vệ sinh.</div>
+        <a href="products/8-san-nhua-cho-lon-130-140k.html">Xem chi tiết</a>
+      </div>
+      
+      <div class="product-item">
+        <img src="9-tam-be-tong-140k/9-tam-be-tong-140k-1.jpg" alt="Tấm bê tông">
+        <h3>Tấm bê tông</h3>
+        <div class="price">140.000đ</div>
+        <div class="short-desc">Tấm bê tông chịu lực cao, độ bền tốt, phù hợp cho chuồng trại.</div>
+        <a href="products/9-tam-be-tong-140k.html">Xem chi tiết</a>
+      </div>
+      
+      <div class="product-item">
+        <img src="10-cay-nuoc-lon-va-num-uong/10-cay-nuoc-lon-va-num-uong-1.jpg" alt="Cây nước lợn và núm uống">
+        <h3>Cây nước lợn và núm uống</h3>
+        <div class="price">Liên hệ Zalo</div>
+        <div class="short-desc">Hệ thống cung cấp nước tự động, núm uống chống rò rỉ, tiết kiệm nước.</div>
+        <a href="products/10-cay-nuoc-lon-va-num-uong.html">Xem chi tiết</a>
+      </div>
+      
+      <div class="product-item">
+        <img src="11-bat-tran/11-bat-tran-1.jpg" alt="Bạt trần">
+        <h3>Bạt trần</h3>
+        <div class="price">Liên hệ Zalo</div>
+        <div class="short-desc">Bạt trần lấy ánh sáng tự nhiên, che phủ chuồng trại hiệu quả.</div>
+        <a href="products/11-bat-tran.html">Xem chi tiết</a>
+      </div>
+      
+      <div class="product-item">
+        <img src="12-mang-lon-cac-loai/12-mang-lon-cac-loai-1.jpg" alt="Máng lợn các loại">
+        <h3>Máng lợn các loại</h3>
+        <div class="price">Liên hệ Zalo</div>
+        <div class="short-desc">Đa dạng máng ăn cho lợn: máng lắc, máng gàu, máng nhựa, máng inox.</div>
+        <a href="products/12-mang-lon-cac-loai.html">Xem chi tiết</a>
+      </div>
+      
+      <div class="product-item">
+        <img src="13-duong-an-tu-dong-cho-ga/13-duong-an-tu-dong-cho-ga-1.jpg" alt="Đường ăn tự động cho gà">
+        <h3>Đường ăn tự động cho gà</h3>
+        <div class="price">Liên hệ Zalo</div>
+        <div class="short-desc">Hệ thống cung cấp thức ăn tự động cho gà, tiết kiệm công sức.</div>
+        <a href="products/13-duong-an-tu-dong-cho-ga.html">Xem chi tiết</a>
+      </div>
+      
+      <div class="product-item">
+        <img src="14-luoi-inox-kem/14-luoi-inox-kem-1.jpg" alt="Lưới inox, kẽm">
+        <h3>Lưới inox, kẽm</h3>
+        <div class="price">Liên hệ Zalo</div>
+        <div class="short-desc">Lưới inox và kẽm chất lượng cao, ứng dụng đa dạng trong chăn nuôi.</div>
+        <a href="products/14-luoi-inox-kem.html">Xem chi tiết</a>
+      </div>
+      
+      <div class="product-item">
+        <img src="15-tam-lam-mat/15-tam-lam-mat-1.jpg" alt="Tấm làm mát">
+        <h3>Tấm làm mát</h3>
+        <div class="price">1.700.000đ/mét dài</div>
+        <div class="short-desc">Tấm làm mát cho chuồng trại, giảm nhiệt độ, tạo môi trường thoáng mát.</div>
+        <a href="products/15-tam-lam-mat.html">Xem chi tiết</a>
+      </div>
+      
+      <div class="product-item">
+        <img src="16-long-bo-cau-265k-1-kg/16-long-bo-cau-265k-1-kg-1.jpg" alt="Lồng bồ câu">
+        <h3>Lồng bồ câu</h3>
+        <div class="price">26.500đ/kg</div>
+        <div class="short-desc">Lồng nuôi bồ câu chất lượng cao, thiết kế tối ưu cho chim bồ câu.</div>
+        <a href="products/16-long-bo-cau-265k-1-kg.html">Xem chi tiết</a>
+      </div>
+      
+      <div class="product-item">
+        <img src="17-he-thong-mang-chuong/17-he-thong-mang-chuong-1.jpg" alt="Hệ thống máng chuông">
+        <h3>Hệ thống máng chuông</h3>
+        <div class="price">Liên hệ Zalo</div>
+        <div class="short-desc">Hệ thống cung cấp thức ăn tự động bằng cơ chế chuông, tiết kiệm nhân công.</div>
+        <a href="products/17-he-thong-mang-chuong.html">Xem chi tiết</a>
+      </div>
+      
+      <div class="product-item">
+        <img src="18-phu-kien-ga/18-phu-kien-ga-1.jpg" alt="Phụ kiện gà">
+        <h3>Phụ kiện gà</h3>
+        <div class="price">Liên hệ Zalo</div>
+        <div class="short-desc">Các phụ kiện cần thiết cho chuồng nuôi gà: núm uống, máng ăn, thiết bị phụ trợ.</div>
+        <a href="products/18-phu-kien-ga.html">Xem chi tiết</a>
+      </div>
+      
+      <div class="product-item">
+        <img src="19-san-de-vit/19-san-de-vit-1.jpg" alt="Sàn dê, vịt">
+        <h3>Sàn dê, vịt</h3>
+        <div class="price">87.000đ/tấm</div>
+        <div class="short-desc">Sàn chuyên dụng cho nuôi dê, vịt, thiết kế phù hợp với đặc tính vật nuôi.</div>
+        <a href="products/19-san-de-vit.html">Xem chi tiết</a>
+      </div>
+      
+      <div class="product-item">
+        <img src="20-may-tron-cam/20-may-tron-cam-1.jpg" alt="Máy trộn cám">
+        <h3>Máy trộn cám</h3>
+        <div class="price">Liên hệ Zalo</div>
+        <div class="short-desc">Máy trộn cám tự động, đảm bảo thức ăn đều đặn, tiết kiệm thời gian.</div>
+        <a href="products/20-may-tron-cam.html">Xem chi tiết</a>
+      </div>
+      
+      <div class="product-item">
+        <img src="11-phu-kien-long-bo-cau/11-phu-kien-long-bo-cau-1.jpg" alt="Phụ kiện lồng bồ câu">
+        <h3>Phụ kiện lồng bồ câu</h3>
+        <div class="price">Liên hệ Zalo</div>
+        <div class="short-desc">Bộ phụ kiện hoàn chỉnh cho lồng bồ câu: máng ăn, bình nước, khay vệ sinh.</div>
+        <a href="products/11-phu-kien-long-bo-cau.html">Xem chi tiết</a>
+      </div>
+      
+      <div class="product-item">
+        <img src="21-duong-an-td-lon/21-duong-an-td-lon-1.jpg" alt="Đường ăn tự động lợn">
+        <h3>Đường ăn tự động lợn</h3>
+        <div class="price">Liên hệ Zalo</div>
+        <div class="short-desc">Hệ thống đường ăn tự động cho lợn, tự động hóa quá trình cho ăn.</div>
+        <a href="products/21-duong-an-td-lon.html">Xem chi tiết</a>
+      </div>
+      
+      <div class="product-item">
+        <img src="22-may-khu-trung-trang-trai-7000-7200k/22-may-khu-trung-trang-trai-7000-7200k-1.jpg" alt="Máy khử trùng trang trại">
+        <h3>Máy khử trùng trang trại</h3>
+        <div class="price">7.000.000đ - 7.200.000đ</div>
+        <div class="short-desc">Máy khử trùng chuyên dụng cho trang trại, tiêu diệt vi khuẩn và virus hiệu quả.</div>
+        <a href="products/22-may-khu-trung-trang-trai-7000-7200k.html">Xem chi tiết</a>
+      </div>
+    </div>
+    <p style="text-align:center; margin-top:32px;">Bạn cần tư vấn thêm? <a href="https://zalo.me/0382198383" class="main-btn" target="_blank">Liên hệ Zalo</a></p>
+  </main>
+  <footer>
+    <p>&copy; 2024 Thiết Bị Trúc Giang | Hotline/Zalo: 0382198383</p>
+  </footer>
+</body>
+</html> 

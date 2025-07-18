@@ -1,0 +1,367 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f7faf7;
+  color: #222;
+}
+
+/* Header styles */
+header {
+  text-align: center;
+  padding: 32px 10px 16px 10px;
+  background: #e6f9ea;
+}
+
+/* Navigation styles for product pages */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #7ed957;
+}
+
+.logo span {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #388e3c;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 24px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #222;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+
+.nav-menu a:hover {
+  background: #b2f2c7;
+  color: #1b5e20;
+}
+
+/* Avatar for main pages */
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #7ed957;
+  margin-bottom: 12px;
+}
+
+h1 {
+  margin: 0 0 8px 0;
+  font-size: 2.2em;
+  color: #388e3c;
+}
+
+.slogan {
+  font-size: 1.1em;
+  color: #388e3c;
+  margin-bottom: 18px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 12px 0;
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #222;
+  font-weight: 500;
+  padding: 6px 14px;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+nav a:hover {
+  background: #b2f2c7;
+  color: #1b5e20;
+}
+
+.zalo-btn {
+  display: inline-block;
+  margin-top: 8px;
+  background: #25d366;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 22px;
+  border-radius: 24px;
+  text-decoration: none;
+  font-size: 1.1em;
+  box-shadow: 0 2px 8px #0001;
+  transition: background 0.2s;
+}
+
+.zalo-btn:hover {
+  background: #1baf4a;
+}
+
+main {
+  max-width: 600px;
+  margin: 32px auto 0 auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px #0001;
+  padding: 24px 18px;
+}
+
+/* Product detail page styles */
+.product-container {
+  display: flex;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  flex-wrap: wrap;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+}
+
+.product-images {
+  flex: 1;
+  min-width: 300px;
+}
+
+.main-image {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.main-image img {
+  width: 100%;
+  max-width: 500px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.image-gallery img {
+  width: 100%;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s, border-color 0.2s;
+  border: 2px solid transparent;
+}
+
+.image-gallery img:hover {
+  transform: scale(1.05);
+  border-color: #7ed957;
+}
+
+.product-info {
+  flex: 1;
+  min-width: 300px;
+}
+
+.product-info h1 {
+  color: #388e3c;
+  margin-bottom: 10px;
+  font-size: 2em;
+}
+
+.price {
+  font-size: 1.3em;
+  color: #388e3c;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.product-description, .specifications, .features {
+  margin-bottom: 25px;
+}
+
+.product-description h2, .specifications h2, .features h2 {
+  color: #388e3c;
+  border-bottom: 2px solid #7ed957;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  font-size: 1.3em;
+}
+
+.specifications ul, .features ul {
+  list-style: none;
+  padding: 0;
+}
+
+.specifications li, .features li {
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.contact-section {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.zalo-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #0068ff;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.zalo-button:hover {
+  background: #0056cc;
+}
+
+.zalo-button img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Footer styles */
+footer {
+  text-align: center;
+  padding: 18px 8px;
+  background: #e6f9ea;
+  color: #388e3c;
+  font-size: 0.95em;
+  margin-top: 32px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.footer-section h3 {
+  color: #388e3c;
+  margin-bottom: 10px;
+}
+
+.footer-bottom {
+  border-top: 1px solid #b2f2c7;
+  padding-top: 15px;
+  margin-top: 15px;
+}
+
+.intro h2 {
+  color: #388e3c;
+  margin-top: 0;
+}
+
+.main-btn {
+  display: inline-block;
+  margin-top: 18px;
+  background: #7ed957;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 24px;
+  border-radius: 24px;
+  text-decoration: none;
+  font-size: 1em;
+  transition: background 0.2s;
+}
+
+.main-btn:hover {
+  background: #388e3c;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .nav-menu {
+    gap: 15px;
+  }
+  
+  .product-container {
+    flex-direction: column;
+    padding: 15px;
+  }
+  
+  .image-gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .main-image img {
+    height: 300px;
+  }
+  
+  .footer-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  main {
+    margin: 18px 4px 0 4px;
+    padding: 14px 4px;
+  }
+  
+  .avatar {
+    width: 90px;
+    height: 90px;
+  }
+  
+  nav ul {
+    gap: 8px;
+  }
+  
+  .logo img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .logo span {
+    font-size: 1.2em;
+  }
+} 
